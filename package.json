@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/motion": "^2.0.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.6",
     "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
