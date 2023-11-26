@@ -1,0 +1,44 @@
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .typewriter::after {
+    content: '\00a0'; /* Add a non-breaking space as content */
+    display: inline-block;
+    width: 8px; /* Adjust the width of the pointer */
+    height: 1.5em; /* Adjust the height of the pointer */
+    background-color: text-green-300; /* Use the desired text color */
+  }
+
+  .text-animation {
+    animation: typing 1s steps(20, end) ;
+  }
+
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .blink {
+    display: inline-block;
+    width: 8px; /* Adjust the width of the pointer */
+    height: 100%; /* Adjust the height of the pointer */
+    background-color: text-green-300; /* Use the desired text color */
+    animation: blink 1s infinite;
+  }
