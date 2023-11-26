@@ -14,19 +14,19 @@
   }
 
   .typewriter::after {
-    content: '\00a0'; /* Add a non-breaking space as content */
+    content: '\00a0'; 
     display: inline-block;
-    width: 8px; /* Adjust the width of the pointer */
-    height: 1.5em; /* Adjust the height of the pointer */
-    background-color: text-green-300; /* Use the desired text color */
+    width: 4px; 
+    height: 1.5em;
+    background-color: text-green-300;
   }
 
   .text-animation {
     animation: typing 1s steps(20, end) ;
   }
 
-
-@keyframes blink {
+  
+  @keyframes blink {
     0%, 100% {
       opacity: 1;
     }
@@ -35,10 +35,12 @@
     }
   }
 
+  
   .blink {
     display: inline-block;
-    width: 8px; /* Adjust the width of the pointer */
-    height: 100%; /* Adjust the height of the pointer */
-    background-color: text-green-300; /* Use the desired text color */
+    width: 8px;
+    height: 100%;
+    background-color: #48BB78; 
     animation: blink 1s infinite;
   }
+  

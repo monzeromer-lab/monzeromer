@@ -13,9 +13,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
   styleUrl: './app.component.css',
   animations: [
     trigger('fadeOut', [
-      transition(':leave', [
-        animate('1s', style({ opacity: 0 })) // Animation for fading out
-      ])
+      transition(':leave', animate('500ms ease-out', style({ opacity: 0 }))) // Adjust the duration as needed
     ])
   ]
 })
