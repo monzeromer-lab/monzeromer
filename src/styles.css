@@ -9,6 +9,8 @@ body {
     height: 100vh; /* 100% of the viewport height */
     width: 100vw; /* 100% of the viewport width */
     overflow: hidden; /* Optional: Hide scrollbars */
-    background-color: #1e1e1e;
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 

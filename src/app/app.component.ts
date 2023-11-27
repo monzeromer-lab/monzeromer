@@ -18,11 +18,9 @@ import { trigger, style, animate, transition } from '@angular/animations';
   ]
 })
 export class AppComponent implements OnInit {
-  title = 'monzeromer';
 
-  isLoading: boolean = true;
   splashVisible: boolean = false;
-
+  isLoading: boolean = true;
 
   ngOnInit() {
     // Simulate an asynchronous operation (e.g., API call or initialization)
