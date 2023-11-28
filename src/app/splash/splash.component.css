@@ -1,47 +1,23 @@
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+.typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  padding-right: 8px; 
+}
 
-  .typewriter {
-    overflow-wrap: break-word;
-    white-space: nowrap;
-    display: inline-block;
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
   }
+  50% {
+    opacity: 0;
+  }
+}
 
-  .typewriter::after {
-    content: '\00a0'; 
-    display: inline-block;
-    width: 4px; 
-    height: 1.5em;
-    /* background-color: text-green-300; */
-  }
-
-  .text-animation {
-    animation: typing 1s steps(20, end) ;
-  }
-
-  
-  @keyframes blink {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-
-  
-  .blink {
-    display: inline-block;
-    width: 3px;
-    height: 100%;
-    --tw-text-opacity: 1;
-    /* background-color: rgb(15 23 42 / var(--tw-text-opacity));  */
-    animation: blink 1s infinite;
-  }
-  
+.blink {
+  display: inline-block;
+  width: 4px;
+  height: 100%;
+  animation: blink 1s infinite;
+}
