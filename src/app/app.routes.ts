@@ -11,11 +11,13 @@ export const routes: Routes = [
     },
     {
         path: 'contact-me',
-        component: ContactMeComponent
+        component: ContactMeComponent,
+        // loadComponent: () => ContactMeComponent,
     },
     {
         path: 'projects',
-        component: ProjectsComponent
+        component: ProjectsComponent,
+        // loadComponent: () => ProjectsComponent
     },
     {
         path: "**",
