@@ -1,7 +1,66 @@
 <app-navbar></app-navbar>
 <!-- Create two rows each with it's purpse first row for social media links the second one is for a message form that's for the mobile -->
 <!-- as for the desktop view make these rows columns and the first column is for the form meanwhile the second column will have your social media liks showing you usernames with each platform logo -->
-<div class="w-full h-full flex flex-col justify-center items-center">
-    <p>This page is still a work in progress</p>
+<div class="w-full h-full flex flex-col items-center overflow-y-scroll" >
+  <!-- Header start -->
+  <div class="flex flex-col w-11/12 h-2/6 rounded-xl bg-cover justify-center items-start contact-bg">
+    <h1 class="pl-4 text-3xl font-semibold break-words text-white">
+      Let's Build Something Amazing!
+    </h1>
+  </div>
+  <!-- Header end -->
+
+  <!-- Body start -->
+  <div class="flex flex-col md:flex-row w-11/12 justify-center items-center md:justify-around mt-2">
+    <!-- Start Contact form -->
+    <div class="flex flex-col justify-center items-center md:w-6/12 h-full bg-neutral-200 text-slate-900">
+      <h1 class="text-2xl font-semibold text-center">Send me a message</h1>
+      <form action="" method="post" class="flex flex-col justify-center items-center">
+        <!-- create a form with the fields first name, last name, email and message -->
+        <div class="flex flex-col w-11/12 mt-4">
+          <!-- Start Names -->
+          <div class="flex flex-row w-full">
+            <label for="first-name" class="block text-slate-900 text-sm font-bold">First Name:</label>
+            <input type="text" id="first-name" name="first-name"
+              class="focus:border-slate-700 py-2 px-3 appearance-none border rounded w-10/12 h-10 bg-neutral-100 text-slate-900 leading-tight focus:outline-none focus:shadow-outline" />
+
+            <label for="last-name" class="block text-sm font-bold mb-2">Last Name:</label>
+            <input type="text" id="last-name" name="last-name"
+              class="focus:border-slate-700 py-2 px-3 appearance-none border rounded w-10/12 h-10 bg-neutral-100 text-slate-900 leading-tight focus:outline-none focus:shadow-outline" />
+          </div>
+          <!-- End Names -->
+
+          <label for="email" class="block text-sm font-bold mb-2">Email:</label>
+          <input type="email" id="email" name="email"
+            class="focus:border-slate-700 py-2 px-3 appearance-none border rounded w-full h-10 bg-neutral-100 text-slate-900 leading-tight focus:outline-none focus:shadow-outline" />
+          <label for="message" class="block text-sm font-bold mb-2">Message:</label>
+          <textarea id="message" name="message"
+            class="focus:border-slate-700 appearance-none border rounded w-full py-2 px-3 bg-neutral-100 text-slate-900 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+          <button type="submit"
+            class="mt-4 hover:bg-slate-800 text-neutral-100 bg-slate-900 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- End Contact form -->
+
+    <!-- Start Social media links -->
+    <div class="mt-5 md:mt-0 flex flex-col md:w-6/12 h-full justify-center items-center bg-neutral-200 text-slate-900">
+      <h1 class="text-2xl font-semibold text-center">Or follow me</h1>
+      <div class="flex flex-col justify-center items-start">
+        <a class="text-center flex flex-row items-center justify-start mb-1" href="https://twitter.com/monzersmiledev" target="_blank" rel="noopener">
+          <img class="w-10 h-10 m-2" src="assets/x-logo-black.png" alt="X" /> Monzer Omer
+        </a>
+        <a class="text-center flex flex-row items-center justify-start mb-1" href="https://twitter.com/monzersmiledev" target="_blank" rel="noopener">
+          <img class="w-10 h-10 m-2" src="assets/x-logo-black.png" alt="X" /> &commat;monzersmiledev
+        </a>
+        <a class="text-center flex flex-row items-center justify-start mb-1" href="https://www.instagram.com/undefined.none.null/" target="_blank" rel="noopener">
+          <img class="w-10 h-10 m-2" src="assets/Instagram_Glyph_Black.png" alt="Instagram" /> &commat;monzer.a.omer
+        </a>
+      </div>
+      <!-- Body end -->
+    </div>
+    <!-- <app-mobile-nav class="md:hidden"></app-mobile-nav> -->
+  </div>
 </div>
-<!-- <app-mobile-nav class="md:hidden"></app-mobile-nav> -->
